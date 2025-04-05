@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.left{
+    width: 25vw;
+    padding:10px;
+}
+.right{
+    width:75vw;
+    margin:16px 0;
+    /* position: relative; */
+}
+.home ul li{
+    display:flex;
+    gap:15px;
+    width:15px;
+    list-style: none;
+    padding-top:14px;
+    font-weight: bold;
+}
+.heading{
+    display: flex;
+    gap:15px;
+    width:100%;
+    padding-top:14px;
+    padding:23px 14px;
+    font-weight: bold;
+    align-items: center;
+}
+.heading img{
+    width: 20px;
+}
+.library{ 
+    min-height:90vh;
+    position: relative;
+}
+
+#songList-playnow{
+    width:20px;
+}
+.footer{
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    font-size: 10px;
+    gap:13px;
+    /* position: absolute; */
+    bottom:0;
+    padding: 12px 0;
+}
+
+.footer a{
+    color:grey;
+}
+.header{
+    background-color: rgb(34 34 34);
+    height:60px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header>*{
+    padding:20px;
+}
+.nav svg{
+    border-radius: 100%;
+}
+.spotifyPlaylist, .popular-Artist, .popularradio, .featuredCharts, .indiasbest, .popularalbum{
+    padding:16px;
+
+}
+.artistContainer{
+    margin:10px;
+    display:flex;
+    gap:10px;
+    /* flex-wrap: wrap; */
+    overflow-y: auto;
+}
+.artist{
+    width:150px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.artist img{
+    width:150px;
+    height:150px;
+    background-size:auto;
+    /* object-fit: cover; */
+    border-radius: 100%;
+}
+.artist svg{
+    background-color: #1fdf64;
+    width:40px;
+    border-radius: 100%;
+    padding-bottom: 9px;
+    padding-left: 3px;
+    position: absolute;
+    right:14px;
+    bottom:55px;   
+    /* bottom go upto 90px */
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+.artist:hover{
+    background-color: rgb(50, 50, 50);
+}
+.artist:hover svg{
+    opacity: 1;
+    bottom: 90px;
+}
+.artist>*{
+    padding-top: 10px;
+}
+.cardContainer, .indiaContainer, .radioContainer, .chartContainer, .albumContainer{
+    margin:10px;
+    display:flex;
+    gap:10px;
+    flex-wrap: wrap;
+    overflow-y:auto;
+    max-height: 44vh;
+}
+h1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.card, .chart, .album, .radio, .india{
+    width:140px;
+    background-color: #252525;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.card svg, .india svg, .radio svg, .album svg, .chart svg{
+    background-color: #1fdf64;
+    width:40px;
+    border-radius: 100%;
+    padding-bottom: 9px;
+    padding-left: 3px;
+    position: absolute;
+    right:14px;
+    bottom:42px;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+.card:hover, .chart:hover ,.india:hover, .radio:hover, .album:hover{
+    background-color: rgb(50, 50, 50);
+}
+.card:hover svg, .chart:hover svg ,.india:hover svg, .radio:hover svg, .album:hover svg{
+    opacity: 1;
+    bottom:83px;
+}
+.card>*, .chart>*, .india>*, .radio>*, .album>*{
+    padding-top: 10px;
+}
+.card img, .chart img, .india img, .radio img, .album img{
+    width:100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.installapp img{
+    top:11px;
+    width:20px;
+}
+.signupbtn, .installapp, .premium, .support, .download{
+    background-color: rgb(34 34 34);
+    color: rgb(162, 159, 159);
+    font-weight: bold;
+    border:none;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 11px;
+}
+.signupbtn:hover, .installapp:hover ,.premium:hover, .support:hover, .download:hover{
+    font-size:15px;
+    color: white;
+}
+.loginbtn{
+    background-color: white;
+    border-radius: 20px;
+    width:79px;
+    height: 40px;
+    padding:10px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.loginbtn:hover{
+    background-color: rgb(234, 228, 228);
+    border-radius: 20px;
+    width:81px;
+    height:42px;
+    padding:10px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.playbar{
+    position: sticky;
+    min-height: 25px;
+    bottom:0;
+    background-color: rgb(255,255,255);
+    width:70vw;
+    padding:12px;
+    border-radius: 30px;
+}
+.playsong{
+    width:20px;
+}
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    gap:12px;
+
+}
+.songList{
+    height:544px;
+    overflow: auto;
+    margin-bottom: 44px;
+}
+.songList ul{
+    padding:0 12px;
+    word-wrap: break-word;
+    margin:44px 0;
+}
+.songList ul li{
+    list-style-type: decimal;
+    display: flex;
+    justify-content: space-between;
+    gap:7px;
+    cursor: pointer;
+    padding:12px 0;
+    border:2px solid white;
+    margin: 12px 0;
+    padding:13px;
+    border-radius: 5px;
+    width:87%;
+    font-size: 15px;
+}
+.songList .info{
+    font-size: 13px;
+    width:344px;
+}
+.playnow{
+    display: flex;
+    align-items: center;
+    /* justify-content:space-between; */
+    gap:12px;
+}
+.playnow span{
+    width:64px;
+}
+.seekbar{
+    width:69.5vw;
+    /* width:96.5vw; */
+    height:2px;
+    background-color: rgb(48, 48, 48);
+    border:2px solid rgb(31, 30, 30);
+    position: sticky;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+    position: relative;
+    left:0;
+    bottom: 7px;
+    background-color: rgb(36, 35, 35);
+    transition: left 0.5s;
+}
+.songbuttons img{
+    cursor: pointer;
+}
+.songtime{
+    width:125px;
+    color:black;
+    padding: 0 10px;
+}
+.songinfo{
+    width:250px;
+    color:black;
+    padding: 0 10px;
+}
+
+.aboveBar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#logo-div{
+    padding:12px;
+}
+.logo img{
+    width:130px;
+}
+.firstLine{
+    display: flex;
+    justify-content: space-between;
+}
+.show-all{
+    text-decoration: none;
+    color:rgb(162, 159, 159);
+}
+.show-all:hover{
+    text-decoration: underline;
+}
+.right-footer{
+    display:flex;
+    justify-content: space-between;
+    margin:30px;
+}
+.right-footer h4{
+    font-weight: bolder;
+    color: white;
+}
+.right-footer span{
+    color:rgb(162, 159, 159);
+    cursor: pointer;
+}
+.right-footer span:hover{
+    color:white;
+    text-decoration: underline;
+}
+.footer-icon img{
+    width: 40px;
+    height: 40px;
+}
+.footer-icon{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+.footer-company div, .footer-community div, .footer-usefullink div, .footer-plans div{
+    padding-top:15px;
+}
+.sm-icon{ 
+    width:40px;
+    border-radius: 100%;
+    background-color: rgb(34 34 34);
+    cursor: pointer;
+}
+.sm-icon:hover{ 
+    background-color: rgb(162, 159, 159);
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.hamburgerContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:14px;
+}
+.left .close{
+    width:0;
+    display: none;
+}
+
+.timevol{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.volume{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    cursor: pointer;
+}
+.range input{
+    cursor: pointer;
+}
+@media (max-width:1200px) {
+    .left{
+        position: absolute;
+        left: -120%;
+        transition: all 0.3s;
+        z-index: 1;
+        width: 370px;
+        background-color: black;
+        padding: 0;
+    }
+    .left .close{
+        display: block;
+        width:30px;
+        position: absolute;
+        right:31px;
+        top:25px;
+    }
+    .right{
+        width: 110vw;
+        margin:0;
+        padding: 0;
+    }
+    .playbar{
+        width:98vw;
+        /* width: calc(100vw-60px); */
+    }
+    .seekbar{
+        width:97vw;
+        width:calc(100vw-70px);
+    }
+    .hamburger{
+        display: block ;
+    }
+    .songinfo, .songtime{
+        width:auto;
+    }
+    .artistContainer{
+        margin:0;
+        display:flex;
+        justify-content: center;
+        gap:10px;
+        flex-wrap: nowrap;
+        overflow-y: auto;
+    }
+    .artist{
+        width:90vw;
+    } 
+    .cardContainer, .indiaContainer, .radioContainer, .chartContainer, .albumContainer{
+        margin:0;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-Y: auto;
+    }
+    .card, .artist, .album, .india, .radio, .chart{
+        width: 44vw;
+    }
+    .spotifyPlaylist h1{
+        padding:16px;
+    }
+    .timevol{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        gap:13px;
+    }
+}
+
+@media (max-width:400px){
+    .card, .artist, .album, .india, .radio, .chart{
+        width: 74vw;
+    }
+}
+
+
+
+
+
