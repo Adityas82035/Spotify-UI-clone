@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/spotify.css">
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close"><img class="invert" src="img/close.img/" alt=""></div>
+            <div id="logo-div" class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img class="invert" src="img/logo.svg" alt="logo"></div>
+                <ul>
+                    <li><img class="invert" src="img/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounder m-1 p-1">
+                <div class="heading flex">
+                    <img class="invert" src="img/playlist.svg" alt="playlist">
+                    <h2>your library</h2>
+                </div>
+                <div class="songList">
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right bg-grey rounded  p-1">
+            <div class="header">
+
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img class="hamburger" src="img/hamburger.svg" alt="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="premium">Premium</button>
+                    <button class="support">Support</button>
+                    <button class="download">Download</button>
+                    <button class="installapp"><img class="inverter" src="img/download.svg" alt=""> Install App</button>
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+
+            <div class="popular-Artist">
+                <div class="firstLine">
+                    <h1>Popular Artist</h1>
+                    <div><a href="#" class="show-all">Show All</a></div>
+                </div>
+                <div class="artistContainer">
+                    <div class="artist">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/pritam.jpg.webp" alt="">
+                        <h2>Pritam</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="artist">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/Arijit.jpg" alt="">
+                        <h2>Arijit Singh</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="artist">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/pritam.jpg.webp" alt="">
+                        <h2>Pritam</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="artist">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/diljit.jpg" alt="">
+                        <h2>Diljit Dosanjh</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="artist">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/arRahman.jpg" alt="">
+                        <h2>A.R Rahman</h2>
+                        <p>Artist</p>
+                    </div>
+                    <!-- <div class="artist">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/diljit.jpg" alt="">
+                        <h2>Diljit Dosanjh</h2>
+                        <p>Artist</p>
+                    </div> -->
+
+                </div>
+            </div>
+
+            <div class="spotifyPlaylist">
+                <div class="firstLine">
+                    <h1>Spotify Playlist</h1>
+                    <div><a href="#" class="show-all">Show All</a></div>
+                </div>
+                <div class="cardContainer">
+<!--                     
+                    <div class="card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/happyHits5.jpeg" alt="">
+                        <h3>Lofi</h3>
+                        <p>Gentle melodies to ease your soul and bring you peace!</p>
+                    </div>
+                    <div class="card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/happyHits2.jpeg" alt="">
+                        <h3>Happy Songs</h3>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+                    <div class="card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/happyHits9.jpeg" alt="">
+                        <h3>Punjabi Mashup</h3>
+                        <p>Desi beats to get you grooving and feeling alive!</p>
+                    </div>
+                    <div class="card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/happyHits3.jpeg" alt="">
+                        <h3>Happy Hits</h3>
+                        <p>Hits to boost your mood and fill you with happiness!</p>
+                    </div>
+                    <div class="card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/happyHits5.jpeg" alt="">
+                        <h3>Lofi</h3>
+                        <p>Gentle melodies to ease your soul and bring you peace!</p>
+                    </div> -->
+
+                </div>
+            </div>
+
+            <div class="popularradio">
+                <div class="firstLine">
+                    <h1>Popular radio</h1>
+                    <div><a href="#" class="show-all">Show All</a></div>
+                </div>
+                <div class="radioContainer">
+                    <div class="radio">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/pr3.jpeg" alt="">
+                        <p>With Sachin-Jigar, Mithoon, Amit Trivedi and more</p>
+                    </div>
+                    <div class="radio">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/pr4.jpeg" alt="">
+                        <p>With Armaan Malik, Mohit Chauhan, Pritam and more</p>
+                    </div>
+                    <div class="radio">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/pr1.jpeg" alt="">
+                        <p>With Mohammed Rafi, Kishore Kumar, Mukesh and more</p>
+                    </div>
+                    <div class="radio">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/pr2.jpeg" alt="">
+                        <p>With Subh, Karan Aujla, Sidhu Moose Wala and more</p>
+                    </div>
+                    <div class="radio">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/pr3.jpeg" alt="">
+                        <p>With A.R. Rahman, Vishal Shekhar, Atif Aslam and more</p>
+                    </div>
+                    <div class="radio">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/pr4.jpeg" alt="">
+                        <p>With Mohammed Rafi, Kishore Kumar, Mukesh and more</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featuredCharts">
+                <div class="firstLine">
+                    <h1>Featured Charts</h1>
+                    <div><a href="#" class="show-all">Show All</a></div>
+                </div>
+                <div class="chartContainer">
+                    <div class="chart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/chart1.jpg" alt="">
+                        <p>Your weekly update of most played...</p>
+                    </div>
+                    <div class="chart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/chart3.jpg" alt="">
+                        <p>Your weekly update of most played...</p>
+                    </div>
+                    <div class="chart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/chart4.jpg" alt="">
+                        <p>Your weekly update of most played...</p>
+                    </div>
+                    <div class="chart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/chart2.jpg" alt="">
+                        <p>Your daily update of most played...</p>
+                    </div>
+                    <div class="chart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/chart3.jpg" alt="">
+                        <p>Your weekly update of most played...</p>
+                    </div>
+                    <div class="chart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/chart4.jpg" alt="">
+                        <p>Your daily update of most played tracks ...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popularalbum">
+                <div class="firstLine">
+                    <h1>Popular albums and singles</h1>
+                    <div><a href="#" class="show-all">Show All</a></div>
+                </div>
+                <div class="albumContainer">
+                    <div class="album">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/album1.jpeg" alt="">
+                        <h3>Lofi Beats</h3>
+                        <p>Gentle melodies to ease your soul and bring you peace!</p>
+                    </div>
+                    <div class="album">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/album3.jpeg" alt="">
+                        <h3>Lofi Beats</h3>
+                        <p>Gentle melodies to ease your soul and bring you peace!</p>
+                    </div>
+                    <div class="album">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/album4.jpeg" alt="">
+                        <h3>Lofi Beats</h3>
+                        <p>Gentle melodies to ease your soul and bring you peace!</p>
+                    </div>
+                    <div class="album">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/album2.jpeg" alt="">
+                        <h3>Lofi Beats</h3>
+                        <p>Gentle melodies to ease your soul and bring you peace!</p>
+                    </div>
+                    <div class="album">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/album3.jpeg" alt="">
+                        <h3>Lofi Beats</h3>
+                        <p>Gentle melodies to ease your soul and bring you peace!</p>
+
+                    </div>
+                    <div class="album">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/album4.jpeg" alt="">
+                        <h3>Lofi Beats</h3>
+                        <p>Gentle melodies to ease your soul and bring you peace!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="indiasbest">
+                <div class="firstLine">
+                    <h1>India's Best</h1>
+                    <div><a href="#" class="show-all">Show All</a></div>
+                </div>
+                <div class="indiaContainer">
+                    <div class="india">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/ib1.jpeg" alt="">
+                        <p>Hottest track from your favourites I-pop...</p>
+
+                    </div>
+                    <div class="india">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/ib2.jpeg" alt="">
+                        <p>Bollywood Centeral, jab baje toh seedha</p>
+
+                    </div>
+                    <div class="india">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/ib3.jpeg" alt="">
+                        <p>Most exciting artists from the Indian indie...</p>
+
+                    </div>
+                    <div class="india">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/ib4.jpeg" alt="">
+                        <p>Gentle melodies to ease your soul and bring you peace!</p>
+
+                    </div>
+                    <div class="india">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/ib1.jpeg" alt="">
+                        <p>Indian Rap Scene. Cover-Seedha Maut</p>
+
+                    </div>
+                    <div class="india">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                        <img src="SpotifyImage/ib2.jpeg" alt="">
+                        <p>Biggest Haryanvi hits from the last 10 year...</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="playbar">
+
+                <div class="seekbar">
+                    <div class="circle">
+
+                    </div>
+                </div>
+                <div class="aboveBar">
+                    <div class="songinfo"></div>
+                    <div class="songbuttons">
+                        <img id="previous" src="img/previoussong.svg" alt="">
+                        <img id="play" class="playsong" src="img/play.svg" alt="">
+                        <img id="next" src="img/nextsong.svg" alt="">
+                    </div>
+                    <div class="timevol">
+                        <div class="songtime"></div>
+                        <div class="volume">
+                            <img src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input  type="range" name="volume"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-footer">
+                <div class="footer-company">
+                    <h4>Company</h4>
+                    <div><a href=""></a><span>About</span></div>
+                    <div><a href=""></a><span>Job</span></div>
+                    <div><a href=""></a><span>For the Record</span></div>
+                </div>
+                <div class="footer-community">
+                    <h4>Communities</h4>
+                    <div><a href=""></a><span>For Artist</span></div>
+                    <div><a href=""></a><span>Developer</span></div>
+                    <div><a href=""></a><span>Advertising</span></div>
+                    <div><a href=""></a><span>Investors</span></div>
+                    <div><a href=""></a><span>Vendors</span></div>
+                </div>
+                <div class="footer-usefullink">
+                    <h4>Useful links</h4>
+                    <div><a href=""></a><span>Support</span></div>
+                    <div><a href=""></a><span>Free Mobile App</span></div>
+                </div>
+                <div class="footer-plans">
+                    <h4>Spotify Plans</h4>
+                    <div><a href=""></a><span>Premium Individual</span></div>
+                    <div><a href=""></a><span>Premium Duo</span></div>
+                    <div><a href=""></a><span>Premium Family</span></div>
+                    <div><a href=""></a><span>Premium Student</span></div>
+                    <div><a href=""></a><span>Spotify Free</span></div>
+                </div>
+                <div class="footer-icon">
+                    <div><img class="inverter sm-icon" src="img/instagram.svg" alt="instagram"></div>
+                    <div><img class="inverter sm-icon" src="img/twitter.svg" alt="twitter"></div>
+                    <div><img class="inverter sm-icon" src="img/facebook.svg" alt="facebook"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/spotify.js"></script>
+</body>
+
+</html>
